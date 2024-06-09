@@ -126,6 +126,3 @@ def upload_file():
         os.remove(file_path)
 
         return jsonify({'message': 'File processed and data stored in ChromaDB', 'documentId': document_id})
-
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
